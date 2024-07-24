@@ -1,0 +1,140 @@
+.table-container {
+    width: 95%;
+    border: 1px solid #E0E5EB;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    position: sticky;
+    top: 0;
+    color: #697180;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    z-index: 1;
+    background-color: #F0F3F7; 
+  }
+  
+  .table tbody {
+    display: block;
+    max-height: 700px;
+    overflow-y: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1F2939;
+  }
+  
+  .table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; 
+    transition: background-color 0.2s;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #E0E5EB;
+  }
+  
+  .th-head-number, 
+  .th-head-type, 
+  .th-head-date, 
+  .th-head-automatic, 
+  .th-head-meters, 
+  .th-head-address, 
+  .th-head-notes, 
+  .th-head-action {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .tr-body {
+    border-bottom: 1px solid #E0E5EB;
+  }
+  
+  .tr-body .td-head-number,
+  .tr-body td {
+    padding-left: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    border: none; 
+  }
+  
+  .table tbody tr td:nth-child(7) { 
+    text-align: left; 
+    padding-left: 30px;
+    color: #5E6674;
+  }
+
+  .table tbody tr td:last-child {
+    flex: 0 0 40px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  
+  .button-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-end;
+  }
+  
+  .button-container button {
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .button-container button[disabled] {
+    cursor: unset;
+    opacity: 0.6;
+  }
+  
+  .button-container span, .button-container button {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+  }
+  
+  .delete-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .tr-body:hover .delete-button {
+    display: inline;
+  }
+  
+  .delete-button img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .delete-button img:hover {
+    content: url('../../public/assets/trash-icon-hover.svg');
+  }

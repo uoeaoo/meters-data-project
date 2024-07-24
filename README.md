@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Meters Data Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Аннотация от автора проекта
 
-## Available Scripts
+В этом проекте вы не увидите следующиех вещей: 
+    - Шрифт Roboto, так как я решил его не устанавливать, в реальном проекте, я бы в первую очередь установил именно шрифты. 
+    - Показания ТПЛ и ЭЛДТ, так как при запросах на сервер их не было и я решил даже не добавлять иконки (так как не знаю как к ним обращаться)
+    - Я не стал придерживаться практики Pixel Perfect и возможно некоторые элементы на пару пикселей сдвинуты, по причине того, что я стараюсь уделять на каждый тестовый проект ровно сутки, так я остаюсь в тонусе и пропускаю проекты, которые требуют больше времени для тестового задания, прошу понять. В живых проектах опять же я соблюдаю точность значений и не редко прибегаю к использованию резиновой верстки.
 
-In the project directory, you can run:
+## Описание
 
-### `npm start`
+Этот проект представляет собой веб-приложение для отображения данных счетчиков, используя React, TypeScript и MobX. 
+В приложении реализована пагинация, отображение адресов и возможность удаления записей.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Требования
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Перед началом убедитесь, что у вас установлены следующие программы:
 
-### `npm test`
+- Node.js (рекомендуется версия LTS)
+- npm или yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Установка
 
-### `npm run build`
+1. Клонируйте репозиторий:
+    git clone https://github.com/yourusername/meters-data-project.git
+    cd meters-data-project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Установите зависимости:
+    npm install
+    # или
+    yarn install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Запуск проекта
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Запустите проект в режиме разработки:
+    npm start
+    # или
+    yarn start
 
-### `npm run eject`
+2. Откройте браузер и перейдите по адресу [http://localhost:3000](http://localhost:3000), чтобы увидеть приложение.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Сборка проекта
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Для сборки проекта используйте команду:
+    npm run build
+    # или
+    yarn build
