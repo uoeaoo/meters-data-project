@@ -22,7 +22,7 @@
 ## Установка
 
 1. Клонируйте репозиторий:
-    git clone https://github.com/yourusername/meters-data-project.git
+    git clone https://github.com/uoeaoo/meters-data-project.git
     cd meters-data-project
 
 2. Установите зависимости:
