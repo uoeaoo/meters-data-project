@@ -1,14 +1,14 @@
 .table-container {
-    width: 95%; /* Контейнер занимает 95% ширины экрана */
-    border: 1px solid #E0E5EB; /* Рамка вокруг всей таблицы */
-    border-radius: 12px; /* Закругленные углы */
+    width: 95%;
+    border: 1px solid #E0E5EB; 
+    border-radius: 12px; 
     background-color: #FFFFFF;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Теневой эффект для улучшения визуального восприятия */
-    overflow: hidden; /* Добавляем overflow, чтобы радиус углов работал правильно */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
   }
   
   .table {
-    width: 100%; /* Таблица занимает всю ширину контейнера */
+    width: 100%; 
     border-collapse: collapse;
   }
   
@@ -22,14 +22,14 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 13px;
-    z-index: 1; /* Устанавливаем шапку таблицы поверх прокручиваемого содержимого */
-    background-color: #F0F3F7; /* Чтобы шапка не перекрывала фон */
+    z-index: 1; 
+    background-color: #F0F3F7; 
   }
   
   .table tbody {
     display: block;
-    max-height: 700px; /* Высота тела таблицы */
-    overflow-y: auto; /* Добавляем вертикальную прокрутку */
+    max-height: 700px; 
+    overflow-y: auto; 
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -40,7 +40,7 @@
   .table tbody tr {
     display: table;
     width: 100%;
-    table-layout: fixed; /* Обеспечиваем фиксированную ширину для строк тела таблицы */
+    table-layout: fixed; 
     transition: background-color 0.2s;
   }
   
@@ -70,20 +70,20 @@
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: left;
-    border: none; /* Убираем границы у ячеек */
+    border: none;
   }
   
-  .table tbody tr td:nth-child(7) { /* Седьмой столбец - Примечания */
-    text-align: left; /* Выравниваем текст по центру */
+  .table tbody tr td:nth-child(7) { 
+    text-align: left; 
     padding-left: 30px;
     color: #5E6674;
   }
 
   .table tbody tr td:last-child {
-    flex: 0 0 40px; /* Устанавливаем фиксированную ширину для последней ячейки (с кнопкой удаления) */
+    flex: 0 0 40px; 
     display: flex;
-    justify-content: flex-end; /* Кнопка удаления располагается в крайнем правом углу */
-    padding: 10px; /* Убираем паддинг, чтобы кнопка была ближе к краю */
+    justify-content: flex-end; 
+    padding: 10px; 
   }
   
   .button-container {
@@ -91,8 +91,8 @@
     margin-bottom: 10px;
     margin-right: 20px;
     display: flex;
-    align-items: center; /* Центрируем кнопки */
-    gap: 5px; /* Расстояние между кнопками */
+    align-items: center; 
+    gap: 5px; 
     justify-content: flex-end;
   }
   

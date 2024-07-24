@@ -16,7 +16,7 @@ class MetersDataStore {
     setMetersData(data: MetersData[], totalCount: number) {
         this.metersData = data; 
         this.totalCount = totalCount;
-        const addressIds = Array.from(new Set(data.map((meter) => meter.area.id))); // Удаляем дубликаты
+        const addressIds = Array.from(new Set(data.map((meter) => meter.area.id))); 
         this.fetchAddresses(addressIds);
     }
 
@@ -49,7 +49,7 @@ class MetersDataStore {
 
     async fetchAddresses(ids: string[]) {
         try {
-            const uniqueIds = Array.from(new Set(ids)); // Удаляем дубликаты
+            const uniqueIds = Array.from(new Set(ids)); 
             console.log('Fetching addresses for IDs:', uniqueIds);
 
             for (const id of uniqueIds) {

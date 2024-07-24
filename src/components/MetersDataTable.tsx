@@ -102,7 +102,7 @@ const MetersDataTable: React.FC = observer(() => {
                 method: 'DELETE'
             });
             if (response.ok) {
-                // Удаление успешно
+                
                 metersDataStore.fetchMetersData();
             } else {
                 console.error('Failed to delete meter:', response.statusText);
